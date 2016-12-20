@@ -49,7 +49,7 @@ class PhinxApplication extends Application
      */
     public function __construct($version = '0.6.5.1')
     {
-        parent::__construct('Phinx by Rob Morgan - https://phinx.org.', $version);
+        parent::__construct("Phinx by Rob Morgan - https://phinx.org.\r\nModified by Kevin Kerstjens - Final Bytes. ", $version);
 
         $this->addCommands(array(
             new Command\Init(),
