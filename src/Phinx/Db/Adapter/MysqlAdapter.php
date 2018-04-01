@@ -796,6 +796,8 @@ class MysqlAdapter extends PdoAdapter implements AdapterInterface
                 }
                 return array('name' => 'blob');
                 break;
+            case static::PHINX_TYPE_BIT:
+                return ['name' => 'bit', 'limit' => $limit ?: 64];
             case static::PHINX_TYPE_INTEGER:
                 if ($limit && $limit >= static::INT_TINY) {
                     $sizes = array(
