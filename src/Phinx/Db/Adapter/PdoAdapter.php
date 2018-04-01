@@ -548,6 +548,7 @@ abstract class PdoAdapter implements AdapterInterface
             'text',
             'integer',
             'biginteger',
+            'bit',
             'float',
             'decimal',
             'datetime',

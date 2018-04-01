@@ -62,6 +62,8 @@ class MysqlAdapter extends PdoAdapter implements AdapterInterface
     const TEXT_MEDIUM  = 16777215;
     const TEXT_LONG    = 4294967295;
 
+    const BIT          = 64;
+
     // According to https://dev.mysql.com/doc/refman/5.0/en/blob.html BLOB sizes are the same as TEXT
     const BLOB_TINY    = 255;
     const BLOB_SMALL   = 255; /* deprecated, alias of BLOB_TINY */
